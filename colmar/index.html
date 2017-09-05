@@ -1,198 +1,193 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
     <title>Colmar Academy</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <link href="./resources/css/reset.css" rel="stylesheet" >
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/images/ic-logo.ico">
   </head>
   <body>
 
-    <!-- HEADER -->
+    <!-- School Header -->
+
     <header>
-      <div class="nav-container">
-        <div class="logo-container">
-          <img src="./resources/images/ic-logo.svg" alt="Colmar logo."/>
-          <span class="colmar">COLMAR</span><span class="academy">ACADEMY</span>
-        </div>
-        <nav>
-          <ul>
-            <li>On Campus</li>
-            <li>Online</li>
-            <li>For Companies</li>
-            <li>Sign In</li>
-          </ul>
-        </nav>
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg" alt="School logo">
+        <h3 class="title-bar"><span>COLMAR</span>ACADEMY</h3>
       </div>
-      <div class="nav-container-mobile">
-        <img src="./resources/images/ic-logo.svg" alt="Colmar logo."/>
-        <img src="./resources/images/ic-on-campus.svg" alt="On-campus icon."/>
-        <img src="./resources/images/ic-online.svg" alt="Online icon."/>
-        <img src="./resources/images/ic-login.svg" alt="Login icon."/>
-      </div>
+      <nav class="desktop">
+        <a href="#">On Campus</a>
+        <a href="#">Online</a>
+        <a href="#">Companies</a>
+        <a href="#">Sign in</a>
+      </nav>
+      <nav class="mobile">
+        <img src="./resources/images/ic-logo.svg" alt="">
+        <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Campus programs"></a>
+        <a href="#"><img src="./resources/images/ic-online.svg" alt="Online programs"></a>
+        <a href="#"><img src="./resources/images/ic-login.svg" alt="Log in"></a>
+      </nav>
     </header>
 
-    <!-- BANNER -->
-    <div class="banner-container">
-      <div class="left-container">
-        <img src="./resources/images/banner.jpg" alt="Picture of three people reading and writing."/>
-      </div>
-      <div class="right-container">
-          <h1>Learn something new every day</h1>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          <span class="button">Start here</span>
-      </div>
-    </div>
+    <!-- Main Section -->
 
-    <!-- MAIN -->
     <main>
-      <div class="basic-info-container">
-        <div class="left-container">
-          <img src="./resources/images/information-main.jpg" alt="Picture of man reading outdoors."/>
-          <div class="text-container">
+
+      <!-- Start Banner -->
+
+      <section class="landing-box">
+        <img src="./resources/images/banner.jpg" alt="Three classmates studying outside">
+        <div class="side-text">
+          <h1>Learn something new everyday</h1>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <a href="#" class="start">Start here</a>
+        </div>
+      </section>
+
+      <!-- Campus -->
+
+      <section class="information">
+        <div class="multi-container">
+          <div class="main-pic-box">
+            <img src="./resources/images/information-main.jpg" alt="Student enjoying book outside">
             <h2>It doesn't hurt to keep practicing</h2>
-            <span class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsam urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
-            <span class="quote-citation">Emanuel, Sr Strategist at Hiring.com</span>
+            <p>"Curabitur vitae libero ipsum porttior consequat. Aliquam et commodo
+              lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed
+              consequat ex. Etiam eget magna laoreet efficitur dolo consequat,
+              tristique ligula."</p>
+            <h5>Emaunuel, Sr Strategist at Hiring.com</h5>
+          </div>
+          <div class="stacked-content-box">
+            <div class="content-box">
+              <img id="pc-pic" src="./resources/images/information-orientation.jpg" alt="Bird's eye view of orientation" title="">
+              <img id="mobile-pic" src="./resources/images/information-orientation-mobile.jpg" alt="Bird's eye view of orientation">
+              <div class="side-text">
+                <h3>Orientation Date</h3>
+                <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <div class="content-box">
+              <img id="pc-pic" src="./resources/images/information-campus.jpg" alt="Indoors look at common area" title="" style="">
+              <img id="mobile-pic" src="./resources/images/information-campus-mobile.jpg" alt="Indoors look at common area">
+              <div class="side-text">
+                <h3>Our campus</h3>
+                <p>Find a campus near you</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <div class="content-box">
+              <img id="pc-pic" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sacks" title="" style="">
+              <img id="mobile-pic" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sacks">
+              <div class="side-text">
+                <h3>Our guest lecture</h3>
+                <p>Join a keynote with Oliver Sacks about music in medical treatment</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="right-container">
-          <div class="menu">
-            <div class="menu-item">
-              <img src="./resources/images/information-orientation.jpg" alt="Overhead picture of people walking."/>
-              <div class="text-container">
-                <h4>Orientation Date</h4>
-                <h5>Tue 10/11 &amp; Wed 10/12: 8am-3pm</h5>
-                <span class="read-more"><a href="#">Read more</a></span>
-              </div>
-            </div>
-            <div class="menu-item">
-              <img src="./resources/images/information-campus.jpg" alt="Picture of cafe interior."/>
-              <div class="text-container">
-                <h4>Our Campus</h4>
-                <h5>Find which campus is close by you</h5>
-                <span class="read-more"><a href="#">Read more</a></span>
-              </div>
-            </div>
-            <div class="menu-item">
-              <img src="./resources/images/information-guest-lecture.jpg" alt="Picture of Oliver Sack."/>
-              <div class="text-container">
-                <h4>Our Guest Lecture</h4>
-                <h5>Join a keynote with Oliver Sack about music in medical treatment</h5>
-                <span class="read-more"><a href="#">Read more</a></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
 
-      <div class="start-learning-container">
-        <div class="section-title">
-          <h2>Start learning</h2>
-        </div>
-        <div class="curriculum-container">
-          <div class="curriculum-subject">
-            <img src="./resources/images/course-software.jpg" alt="Picture of computers on a desk."/>
-            <div class="text-container">
-              <h4>Software engineering</h4>
-              <h5>COURSES</h5>
-              <h5>Web Development, Mobile Development, iOT, APIs</h5>
-            </div>
-          </div>
-          <div class="curriculum-subject">
-            <img src="./resources/images/course-computer-art.jpg" alt="Picture of a smartphone in hand."/>
-            <div class="text-container">
-              <h4>Computer art</h4>
-              <h5>COURSES</h5>
-              <h5>Imagining &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</h5>
-            </div>
-          </div>
-          <div class="curriculum-subject">
-            <img src="./resources/images/course-design.jpg" alt="Picture of person holding a camera."/>
-            <div class="text-container">
-              <h4>Design</h4>
-              <h5>COURSES</h5>
-              <h5>User Experience Design, User Research, Visual Design</h5>
-            </div>
-          </div>
-          <div class="curriculum-subject">
-            <img src="./resources/images/course-data.jpg" alt="Picture of an open laptop."/>
-            <div class="text-container">
-              <h4>Data</h4>
-              <h5>COURSES</h5>
-              <h5>Data Science, Big Data, SQL, Data Visualization</h5>
-            </div>
-          </div>
-          <div class="curriculum-subject">
-            <img src="./resources/images/course-business.jpg" alt="Picture of chess board and pieces."/>
-            <div class="text-container">
-              <h4>Business</h4>
-              <h5>COURSES</h5>
-              <h5>Product Development, Business Development, Startup</h5>
-            </div>
-          </div>
-          <div class="curriculum-subject">
-            <img src="./resources/images/course-marketing.jpg" alt="Picture of smartwatch on wrist."/>
-            <div class="text-container">
-              <h4>Marketing</h4>
-              <h5>COURSES</h5>
-              <h5>Analytics, Content Marketing, Mobile Marketing</h5>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Classes Section -->
 
-      <div class="thesis-exhibit-container">
-        <div class="section-title">
-          <h2>Thesis exhibit</h2>
-        </div>
-        <div class="thesis-container">
-          <div class="left-container">
-            <video src="./resources/videos/thesis.mp4">Sorry, your browser doesn't support embedded videos.</video>
-            <div class="text-container">
-              <h2>Reimagine urban</h2>
-              <span class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsam urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
+      <section class="courses">
+        <h2>Start learning</h2>
+        <div class="course-container">
+          <div class="course-box">
+            <img src="./resources/images/course-software.jpg" alt="Desk with monitors">
+            <div class="course-text">
+              <h3>Software Engineering</h3>
+              <p>COURSES</p>
+              <p>Web Development, Mobile Development, IoT, APIs</p>
             </div>
           </div>
-          <div class="right-container">
-            <div class="menu">
-              <div class="menu-item">
-                <img src="./resources/images/thesis-fisma.jpg" alt="Overhead picture of workstation."/>
-                <div class="text-container">
-                  <h4>Fisma: Design and</h4>
-                  <h5>Designer showcase of new prototype product</h5>
-                </div>
+          <div class="course-box">
+            <img src="./resources/images/course-computer-art.jpg" alt="Hand holding mobile phone">
+            <div class="course-text">
+              <h3>Computer Art</h3>
+              <p>COURSES</p>
+              <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual
+                Effects, Computer Animation</p>
+           </div>
+          </div>
+          <div class="course-box">
+            <img src="./resources/images/course-design.jpg" alt="Person holding advanced camera">
+            <div class="course-text">
+              <h3>Design</h3>
+              <p>COURSES</p>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </div>
+          <div class="course-box">
+            <img src="./resources/images/course-data.jpg" alt="Laptop open with charts">
+            <div class="course-text">
+              <h3>Data</h3>
+              <p>COURSES</p>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </div>
+          <div class="course-box">
+            <img src="./resources/images/course-business.jpg" alt="Chessboard with chess pieces">
+            <div class="course-text">
+              <h3>Business</h3>
+              <p>COURSES</p>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </div>
+          <div class="course-box">
+            <img src="./resources/images/course-marketing.jpg" alt="Person using smart watch">
+            <div class="course-text">
+              <h3>Marketing</h3>
+              <p>COURSES</p>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Thesis Section -->
+
+      <section class="thesis">
+        <h2>Thesis Exhibits</h2>
+        <div class="multi-container">
+          <div class="main-pic-box">
+            <video src="./resources/videos/thesis.mp4" autoplay muted loop alt="Shadows on building as time passes"></video>
+            <h3>Reimagine Urban</h3>
+            <p>"Curabitur vitae libero ipsum porttior consequat. Aliquam et commodo
+              lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed
+              consequat ex. Etiam eget magna laoreet efficitur dolo consequat,
+              tristique ligula."</p>
+          </div>
+          <div class="stacked-content-box">
+            <div class="content-box">
+              <img src="./resources/images/thesis-fisma.jpg" alt="Planning with highlighter" title="" style="">
+              <div class="side-text">
+                <h3>FISMA: Design and Security</h3>
+                <p>Designer showcase of new prototype project</p>
               </div>
-              <div class="menu-item">
-                <img src="./resources/images/thesis-now-and-then.jpg" alt="Picture of Empire State Building."/>
-                <div class="text-container">
-                  <h4>Now and then</h4>
-                  <h5>Research study about New York</h5>
-                </div>
+            </div>
+            <div class="content-box">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="City skyline" title="" style="">
+              <div class="side-text">
+                <h3>Now and Then</h3>
+                <p>Research study about New York</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
-    <!-- FOOTER -->
+<!-- Footer Section -->
+
     <footer>
-      <div class="footer-container">
-        <div class="copyright-container">
-          <span class="copyright">&copy; 2017 Colmar Academy. All rights reserved</span>
-        </div>
-        <nav>
-          <ul>
-            <li>Terms</li>
-            <li>Privacy</li>
-          </ul>
-        </nav>
-      </div>
+      <h5>© 2017 Colmar Academy. All rights reserved</h5>
+      <nav class="legal">
+          <span>Terms</span>
+          <span>Privacy</span>
+      </nav>
     </footer>
-
-
-
   </body>
 </html>
